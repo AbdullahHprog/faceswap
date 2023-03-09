@@ -26,4 +26,4 @@ RUN jupyter serverextension enable --py jupyter_http_over_ws
 RUN alias python=python3.8
 RUN echo "alias python=python3.8" >> /root/.bashrc
 WORKDIR "/notebooks"
-CMD ["jupyter-notebook", "--allow-root" ,"--port=8888" ,"--no-browser" ,"--ip=0.0.0.0"]
+CMD ["jupyter-notebook", "--allow-root" ,"--port=8080" ,"--no-browser" ,"--ip=0.0.0.0"]
